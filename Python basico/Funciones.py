@@ -1,29 +1,23 @@
-# def imprimir_mensaje():
-#    print('Mensaje Especial: ')
-#    print('¡Estoy aprendiendo a usar funciones!')
+# Funcion Simple
+def greet():
+    print("Hola")
+    print("Como estas?")
+    print("El clima no esta muy bien hoy?")
+greet()
 
-# imprimir_mensaje()
+# Funciones con Inputs
 
-# def conversacion(mensaje):
-#     print('Hola')
-#     print('Como estas')
-#     print(mensaje)
-#     print('Adios')
+def greet_name(name):
+    print(f"Hola {name}")
+    print(f"Como estas {name}?")
+greet_name("Andres")
 
-# opcion = int(input('Elige una opcion (1, 2, 3): '))
-# if opcion == 1:
-#     conversacion('Elegiste la opcion 1')
-# elif opcion == 2:
-#     conversacion('Elegiste la opcion 2')
-# elif opcion == 3:
-#     conversacion('Elegiste la opcion 3')
-# else:
-#     print('Escribe la opcion correcta')
+# Funciones con mas de 1 Input
 
-def suma(a, b):
-    print('Se suman dos numeros')
-    resultado = a + b
-    return resultado
+def greet_with(nombre, ubicacion):
+    print(f"Hola {nombre}")
+    print(f"Estas en {ubicacion}?")
 
-sumatoria = suma(1, 5)
-print(sumatoria)
+#greet_with("Jack Bauer", "Nowhere")
+#greet_with("Nowhere", "Jack Bauer")
+greet_with(ubicacion = "Bogota", nombre = "Andres")

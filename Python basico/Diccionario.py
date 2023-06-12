@@ -1,28 +1,21 @@
-def main():
-    mi_diccionario = {
-        'llave1': 1,
-        'llave2': 2,
-        'llave3': 3,
-    }
-    # print(mi_diccionario['llave1'])
-    # print(mi_diccionario['llave2'])
-    # print(mi_diccionario['llave3'])
+programming_dictionary = {"Bug": "An error in a program that prevents the program from running as expected.", 
+"Function": "A piece of code that you can easily call over and over again."}
 
-    poblacion_paises = {
-        'Argentina': 44_938_712,
-        'Brasil': 210_147_125,
-        'Colombia': 50_372_424
-    }
-    # print(poblacion_paises['Brasil'])
-    
-    # for pais in poblacion_paises.keys():
-    #     print(pais)
+#
+print(programming_dictionary["Function"])
 
-    # for pais in poblacion_paises.values():
-    #     print(pais)
+# Agregando nuevo contenido al diccionario
+programming_dictionary["Loop"] = "The action of oding something over and over again."
+print(programming_dictionary)
 
-    for pais, poblacion in poblacion_paises.items():
-        print(pais + ' tiene ' + str(poblacion) + ' habitantes')
+# Crear un diccionario vacio
+empty_dictionary = {}
 
-if __name__ == '__main__':
-    main()
+#Editar un item en el diccionario
+programming_dictionary["Bug"] = "A moth in your computer"
+print(programming_dictionary)
+
+# Loop en un diccionario
+for key in programming_dictionary:
+    print(key)
+    print(programming_dictionary[key])
